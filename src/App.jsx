@@ -10,7 +10,7 @@ function App() {
       <Loader />
 
       <h2>Circle Loader</h2>
-      <Loader shape="circle" width="50px" height="50px" />
+      <Loader layout={[{shape:"circle", width:"50px",height:"50px"}]} />
 
       <h2>Custom Layout Loader</h2>
       <Loader
