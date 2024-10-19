@@ -15,34 +15,18 @@ const Loader = ({ shape = 'rectangle', width = '100%', height = '20px', animate 
       style={{
         width: item.width || '100%',
         height: item.height || '20px',
+        borderRadius: item.shape === 'circle' ? `100%`: '',
         // backgroundColor: theme === 'dark' ? '#333' : '#f0f0f0',
       }}
     />
   ));
 
   return (
-    // <div className={`loader-wrapper ${theme}`}>
-    //   {layout.length > 0 ? layoutStructure : <div className={`loader ${shape} ${animate ? 'animate' : ''}`} style={loaderStyles} />}
-    // </div>
-
     <div className='back'>
       <div className='base'>
         {layoutStructure.length>0 && layoutStructure}
       </div>
-
     </div>
-  //   <div class="back">
-	// <div class="base">
-	// 	<div class="hole"></div>
-	// 	<div class="hole"></div>
-  //       <div style={{display:'flex', flexDirection:'row'}}>
-  //       <div class="hole"></div>
-	// 	<div class="hole"></div>
-  //       <div class="hole"></div>
-	// 	<div class="hole"></div>
-  //       </div>
-	// </div>
-  //   </div>
   );
 };
 

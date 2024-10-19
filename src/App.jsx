@@ -16,7 +16,7 @@ function App() {
       <Loader
         layout={[
           { shape: 'rectangle', width: '100%', height: '20px' },
-          { shape: 'circle', width: '50px', height: '50px' },
+          { shape: 'rectangle', width: '50px', height: '50px' },
           { shape: 'rectangle', width: '80%', height: '15px' },
         ]}
         // theme="dark"
