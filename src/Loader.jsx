@@ -43,7 +43,18 @@ const Loader = ({
   return (
     <div className="back">
       <div className="base">
-        {layoutStructure.length > 0 && layoutStructure}
+        {layoutStructure.length > 0 && (
+          <div
+            style={{
+              gap: "5px",
+              display: "flex",
+              flexDirection: "column",
+              padding: "20px",
+            }}
+          >
+            {layoutStructure}
+          </div>
+        )}
       </div>
     </div>
   );
