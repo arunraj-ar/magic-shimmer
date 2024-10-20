@@ -2,11 +2,21 @@ import React from 'react';
 import './Loader.css'; // Make sure this path is correct
 
 const Loader = ({ shape = 'rectangle', width = '100%', height = '20px', animate = true, speed = 2, theme = 'light', layout = [] }) => {
-  const loaderStyles = {
-    width,
-    height,
-    animationDuration: `${speed}s`,
-  };
+  const getStyles = (item) => {
+    const {shape = 'rectangle'} = item
+    switch(shape){
+      case 'rectangle':
+        return {
+          width: item.width || '100%',
+          height: item.height || '20px',
+        }
+      case 'circle':
+        return {
+          width: item.width || '100%',
+          height: item.height || '20px',
+          borderRadius: '100%'
+        }
+  }
 
   const layoutStructure = layout.map((item, index) => (
     <div
