@@ -7,7 +7,7 @@ function App() {
     <>
       <div>
       <h2>Default Loader</h2>
-      <Loader />
+      <Loader layout={[]} />
 
       <h2>Circle Loader</h2>
       <Loader layout={[{shape:"circle", width:"50px",height:"50px"}]} />
@@ -19,7 +19,6 @@ function App() {
           { shape: 'rectangle', width: '50px', height: '50px' },
           { shape: 'rectangle', width: '80%', height: '15px' },
         ]}
-        // theme="dark"
         speed={1.5}
       />
     </div>
