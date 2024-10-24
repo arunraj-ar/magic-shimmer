@@ -3,8 +3,8 @@ import "./Loader.css";
 
 const Loader = ({
   shape = "rectangle",
-  width = "100%",
-  height = "20px",
+  width = "100px",
+  height = "100px",
   animate = true,
   speed = 2,
   theme = "light",
@@ -50,9 +50,9 @@ const Loader = ({
             <div
               className={`hole ${animate ? "animate" : ""}`}
               style={getStyles({
-                shape: "rectangle",
-                width: "100px",
-                height: "100px",
+                shape: shape,
+                width: width,
+                height: height,
               })}
             />
           </div>
