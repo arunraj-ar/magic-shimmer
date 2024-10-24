@@ -1,5 +1,5 @@
 import React from "react";
-import "./Loader.css"; // Make sure this path is correct
+import "./Loader.css"; 
 
 const Loader = ({
   shape = "rectangle",
