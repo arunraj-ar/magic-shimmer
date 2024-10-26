@@ -22,7 +22,7 @@ function App() {
           { shape: 'rectangle', width: '100%', height: '100px' },
           { shape: 'rectangle', width: '100px', height: '10rem' },
         ]}
-        speed={1.5}
+        speed={4}
       />
     </div>
     </>

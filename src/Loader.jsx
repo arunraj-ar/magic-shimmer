@@ -41,7 +41,7 @@ const Loader = ({
   ));
 
   return (
-    <div className="back">
+    <div className="back" style={{animationDuration: `${speed}s`}}>
       <div className="base">
         {layoutStructure.length > 0 ? (
           <div className="holesWrapper">{layoutStructure}</div>
