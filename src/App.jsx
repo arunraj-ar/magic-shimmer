@@ -20,6 +20,7 @@ function App() {
           { shape: 'rectangle', width: '50px', height: '50px' },
           { shape: 'rectangle', width: '80%', height: '15px' },
           { shape: 'rectangle', width: '100%', height: '100px' },
+          { shape: 'rectangle', width: '100px', height: '10rem' },
         ]}
         speed={1.5}
       />
