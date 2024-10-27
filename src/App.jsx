@@ -27,6 +27,9 @@ function App() {
             { shape: "rectangle", width: "100px", height: "10rem" },
           ]}
           speed={4}
+          xAlign="center"
+          yAlign="bottom"
+          direction="vertical"
         />
       </div>
     </>
